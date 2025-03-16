@@ -23,6 +23,27 @@ An interactive, command-line quiz application built in C++. It features programm
 - Your score updates in real time.
 - At the end, you’ll see your total score.
 
+## Adding Questions
+To add new quiz questions, modify the questions file (`quiz_questions.txt`) following this format:
+
+- Each question starts with `MC` (for multiple-choice).
+- The next line is the question text.
+- Then, specify the number of answer options.
+- List the answer options, one per line.
+- Finally, specify the correct answer's index (1-based).
+- Use `---` as a separator between questions.
+  
+Example:
+MC
+Which of the following is NOT a pillar of Object-Oriented Programming?
+4
+Encapsulation
+Inheritance
+Compilation
+Polymorphism
+3
+----
+ 
 ## Contributing
 Feel free to fork the repository and submit a pull request!
 
