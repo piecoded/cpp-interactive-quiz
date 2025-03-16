@@ -43,7 +43,7 @@ Compilation <br>
 Polymorphism <br>
 3 <br>
 ----</p>
- 
-## Contributing
-Feel free to fork the repository and submit a pull request!
 
+## Future Improvements
+- More question categories (like True/False)
+- Dynamic selection of number of questions
