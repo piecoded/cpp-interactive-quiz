@@ -1,0 +1,90 @@
+MC
+Which of the following is NOT a pillar of Object-Oriented Programming?
+4
+Encapsulation
+Inheritance
+Compilation
+Polymorphism
+3
+----
+MC
+What is a class in OOP?
+4
+A variable that holds multiple values
+A blueprint for creating objects
+A built-in function in programming languages
+A method that performs operations
+2
+----
+MC
+Which keyword is used to create an object in Python?
+4
+new
+create
+class
+No keyword is needed
+4
+----
+MC
+What does encapsulation do in OOP?
+4
+Allows data and methods to be bundled together
+Forces the use of global variables
+Prevents object creation
+Makes all data accessible to any part of the program
+1
+----
+MC
+What is the process of acquiring properties from another class called?
+4
+Inheritance
+Encapsulation
+Overloading
+Data hiding
+1
+----
+MC
+Which of the following best describes polymorphism in OOP?
+4
+One function behaves differently based on input or object type
+The ability to create multiple objects from a single class
+The use of private variables in a class
+Writing code without using objects
+1
+----
+MC
+What is an object in OOP?
+4
+A function inside a class
+An instance of a class
+A method that modifies variables
+A data type
+2
+----
+MC
+Which of the following is TRUE about constructors in OOP?
+4
+A constructor is used to delete objects
+A constructor initializes an object when it is created
+A constructor is always called manually
+A constructor cannot have parameters
+2
+----
+MC
+Which access modifier allows a class member to be accessed only within the same class?
+4
+Public
+Protected
+Private
+Global
+3
+----
+MC
+What is method overloading?
+4
+Having multiple methods with the same name but different parameters
+Overriding a method from the parent class in a child class
+Making a method execute multiple times
+Assigning multiple methods to the same variable
+1
+----
