@@ -9,7 +9,7 @@ An interactive, command-line quiz application built in C++. It features programm
 
 ## Installation
 1. Clone the repository:
-   git clone https://github.com/piecoded/cpp-interactive-quiz.git
+   git clone https://github.com/piecoded/cpp-interactive-quiz.git <br>
    cd cpp-interactive-quiz
    
 2. Compile the project:
@@ -34,15 +34,15 @@ To add new quiz questions, modify the questions file (`quiz_questions.txt`) foll
 - Use `---` as a separator between questions.
   
 Example:
-MC
-Which of the following is NOT a pillar of Object-Oriented Programming?
-4
-Encapsulation
-Inheritance
-Compilation
-Polymorphism
-3
-----
+<p>MC
+Which of the following is NOT a pillar of Object-Oriented Programming? <br>
+4 <br>
+Encapsulation <br>
+Inheritance <br>
+Compilation <br>
+Polymorphism <br>
+3 <br>
+----</p>
  
 ## Contributing
 Feel free to fork the repository and submit a pull request!
