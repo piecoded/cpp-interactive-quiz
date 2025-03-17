@@ -31,7 +31,7 @@ std::vector<Question> loadQuestionsFromFile(const std::string& filename) {
             file >> correctIndex;
             file.ignore();  // Ignore newline after correct index
 
-            std::getline(file, line); // Read delimiter (---)
+            std::getline(file, line); // Read delimiter (----)
 
             questions.emplace_back(QuestionType::MULTIPLE_CHOICE, questionText, options, correctIndex - 1);
         }

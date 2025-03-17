@@ -1,7 +1,6 @@
 #ifndef QUIZ_H
 #define QUIZ_H
 
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -29,20 +28,10 @@ struct Question {
         }
     }
 };
+bool validateQuizFile(const std::string& filename); // check correct format for questions listed in text file
+std::vector<Question> loadQuestionsFromFile(const std::string& filename); //read questions from file and parse into objects
 
-std::vector<Question> loadQuestionsFromFile(const std::string& filename);
 void displayQuestions(const std::vector<Question>& questions);
-
-bool validateQuizFile(const std::string& filename);
-
-// Function to load questions from the data file
-vector<string> loadQuestions(const string& filename);
-
-// Function to display a question and return user's answer
-string displayQuestion(const string& question);
-
-// Function to check if the answer is correct
-bool checkAnswer(const string& answer, const string& correctAnswer);
 
 // Global variable to keep track of the score
 extern int score;

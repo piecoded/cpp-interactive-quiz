@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include <iostream> // For debugging output
+#include <iostream> 
 
 using namespace std;
 
@@ -17,7 +17,7 @@ bool validateQuizFile(const string& filename) {
     vector<string> sections;
 
     while (getline(file, line)) {
-        if (line.empty()) continue; // Skip empty lines
+        if (line.empty()) continue; // skip empty lines
 
         // Debug: Print each line being read
         // cout << "Reading line: " << line << endl;
@@ -25,26 +25,24 @@ bool validateQuizFile(const string& filename) {
         // Check for the delimiter "----"
         if (line == "----") {
             // cout << "Found separator ----" << endl;
-
-            // Debug: Print collected sections
             // cout << "Collected sections size: " << sections.size() << endl;
             // for (size_t i = 0; i < sections.size(); ++i) {
             //     cout << "Section[" << i << "]: " << sections[i] << endl;
             //  }
 
-            // Validate the completed question block
+            // validate the completed question block
             if (sections.size() != 8) { 
                 cout << "Error: Incorrect number of sections!" << endl;
                 return false;
             }
 
-            // Validate question type
+            // validate question type
             if (sections[0] != "MC") { 
                 cout << "Error: Invalid question type!" << endl;
                 return false;
             }
 
-            // Validate the number of options
+            // validate the number of options
             int numOptions;
             try {
                 numOptions = stoi(sections[2]); 
@@ -58,10 +56,10 @@ bool validateQuizFile(const string& filename) {
                 return false;
             }
 
-            // Validate correct answer index (should be at index 5)
+            // validate correct answer index (should be at index 5)
             int correctAnswer;
             try {
-                correctAnswer = stoi(sections[7]); // Corrected index
+                correctAnswer = stoi(sections[7]);
             } catch (...) {
                 cout << "Error: Invalid answer index format!" << endl;
                 return false;
@@ -79,12 +77,10 @@ bool validateQuizFile(const string& filename) {
         sections.push_back(line);
     }
 
-    // Ensure the last question block was properly closed with "----"
     if (!sections.empty()) {
         cout << "Error: Last question block not closed with ----!" << endl;
         return false;
     }
-
     // cout << "Quiz file is valid!" << endl;
     return true;
 }

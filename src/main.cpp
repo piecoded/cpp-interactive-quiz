@@ -1,19 +1,5 @@
 // // main.cpp - Interactive Quiz Program entry point
 
-// #include "quiz.h"
-// #include <iostream>
-// #include <string>
-// using namespace std;
-
-// int main(int argc, char* argv[]) {
-//     cout << "Welcome to the Interactive Quiz Program!" <<endl;
-    
-//     // TODO: Add call to function that loads questions from file
-//     // TODO: Add call to function that starts the quiz
-    
-//     return 0;
-// }
-
 #include <iostream>
 #include "../include/quiz.h"
 
@@ -30,9 +16,8 @@ int main() {
     }
     std::vector<Question> questions = loadQuestionsFromFile(filename);
     cout << "Welcome to the Interactive Quiz Program!\n" <<endl;
-
     
-    displayQuestions(questions);  // Use the new function
+    displayQuestions(questions);
 
     return 0;
 }
