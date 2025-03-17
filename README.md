@@ -7,15 +7,17 @@ An interactive, command-line quiz application built in C++. It features programm
 - Keeps track of your score
 - Highlights correct and incorrect answers with colors
 
-## Installation
+## Installation (may vary on different platforms)
 1. Clone the repository:
-   git clone https://github.com/piecoded/cpp-interactive-quiz.git <br>
+   git clone https://github.com/piecoded/cpp-interactive-quiz.git
+
+2. Go to root project directory:   
    cd cpp-interactive-quiz
    
-2. Compile the project:
+3. Compile the project:
    make
    
-3. Run the quiz:
+4. Run the quiz:
    ./bin/quiz.exe
 
 ## Usage
